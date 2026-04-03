@@ -9,13 +9,18 @@ const Header: React.FC = (props: FundTransferState) => {
 
   // 返回
   const handleBack = () => {
-    console.log('返回')
+    alert('返回');
   }
 
   // 更换产品 - 打开弹窗
   const handleChangeProduct = () => {
     setShowModal(true);
   };
+
+  // 点击图标
+  const handleIcon = () => {
+    alert('点击图标')
+  }
 
   return (
     <div className={styles.header}>
@@ -43,7 +48,7 @@ const Header: React.FC = (props: FundTransferState) => {
         <div className={styles.changeBtnWrapper}>
           <span><SvgIcon name="back" size={24} onClick={handleBack} /></span>
           <span className={styles.changeBtn} onClick={handleChangeProduct}>更换产品</span>
-          <span><SvgIcon name="dotIcon" size={24} /></span>
+          <span onClick={handleIcon}><SvgIcon name="dotIcon" size={24} /></span>
         </div>
         <div className={styles.transferCount}>将转入
           <span className={styles.count}>{transferNum}只</span>产品

@@ -29,7 +29,7 @@ export function fundTransferReducer(
   action: FundAction,
 ): FundTransferState {
   switch (action.type) {
-    case FundActionTypes.INIT_FUNDS: {
+    case FundActionTypes.ININT_FUNDS: {
       // 假设初始化时 funds 已由外部传入，这里重新计算 showMinTip 和 disableConfirm
       const updatedFunds = updateFundsWithShowTip(state.funds);
       const disableConfirm = getDisableConfirm(updatedFunds);

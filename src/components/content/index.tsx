@@ -17,18 +17,6 @@ const FundTransfer: React.FC = () => {
     dispatch(initFunds());
   }, [funds]);
 
-  // 计算超出金额（正数表示超出，负数或零表示未超出）
-  // const exceedAmount = totalAmount - TOTAL_BUDGET;
-  // const isOverBudget = exceedAmount > 0;
-
-  // 动态生成错误提示信息
-  // const getErrorMessage = useCallback(() => {
-  //   if (isOverBudget) {
-  //     return `分配金额超出本次充值金额，超出 ${exceedAmount.toFixed(2)} 元`;
-  //   }
-  //   return "";
-  // }, [isOverBudget, exceedAmount]);
-
   // 处理金额输入变化
   const handleAmountChange = (id: number, value: string) => {
     const numValue = value === "" ? null : parseFloat(value);
@@ -61,11 +49,11 @@ const FundTransfer: React.FC = () => {
   };
 
   const handleSelect = () => {
-    alert("选择产品功能待实现");
+    alert("选择产品");
   };
 
   const handleCancel = () => {
-    alert("取消修改功能待实现");
+    alert("取消修改");
   }
 
   return (
