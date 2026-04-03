@@ -40,7 +40,7 @@ const Header: React.FC = (props: FundTransferState) => {
         </div>
         <div className={styles.time}>1:23AM</div>
         <div className={styles.battery}>
-          <span>100%</span>
+          <span className={styles.starBar}>100%</span>
           <SvgIcon name="battery" size={24} />
         </div>
       </div>
