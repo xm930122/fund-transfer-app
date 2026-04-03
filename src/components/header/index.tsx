@@ -2,10 +2,14 @@
 import React, { memo } from "react";
 import SvgIcon from "@/components/SvgIcon";
 import { type FundTransferState } from "@/const/fundTransfer/types";
+import { getFormattedTime, getTime } from "@/utils";
 import styles from "./index.module.less";
 
 const Header: React.FC = (props: FundTransferState) => {
   const { setShowModal, transferNum } = props;
+
+  // 获取当前时间并格式化显示 时:分:秒
+  const formattedTime = `${getFormattedTime()} ${getTime()}`;
 
   // 返回
   const handleBack = () => {
@@ -38,7 +42,7 @@ const Header: React.FC = (props: FundTransferState) => {
             <SvgIcon name="wifi" size={14} color="#1a2c3e" />
           </span>
         </div>
-        <div className={styles.time}>1:23AM</div>
+        <div className={styles.time}>{formattedTime}</div>
         <div className={styles.battery}>
           <span className={styles.starBar}>100%</span>
           <SvgIcon name="battery" size={24} />
