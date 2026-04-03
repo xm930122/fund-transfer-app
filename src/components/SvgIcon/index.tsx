@@ -1,4 +1,3 @@
-// src/components/SvgIcon/index.tsx
 import React, { Suspense } from 'react'
 import styles from './index.module.less'
 

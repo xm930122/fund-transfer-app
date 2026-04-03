@@ -15,18 +15,6 @@ const FundTransfer: React.FC = () => {
     dispatch(setShowModal(status));
   };
 
-  // 处理金额变化
-  // const handleAmountChange = (id: number, value: string) => {
-  //   const numValue = value === "" ? null : parseFloat(value);
-  //   setFunds((prev) =>
-  //     prev.map((fund) =>
-  //       fund.id === id ? { ...fund, amount: numValue } : fund,
-  //     ),
-  //   );
-  //   // 模拟错误提示（实际根据业务逻辑控制）
-  //   setErrorMsg("分配金额超出本次充值金额，以超出5，000元");
-  // };
-
   return (
     <div className={styles.container}>
       {/* 头部 */}

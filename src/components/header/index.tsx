@@ -1,6 +1,6 @@
 // 头部组件
 import React, { memo } from "react";
-import SvgIcon from "components/SvgIcon";
+import SvgIcon from "@/components/SvgIcon";
 import { type FundTransferState } from "@/const/fundTransfer/types";
 import styles from "./index.module.less";
 

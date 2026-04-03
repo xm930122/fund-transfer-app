@@ -71,3 +71,8 @@ export default defineConfig([
   },
 ])
 ```
+
+## svg template url
+
+https://www.iconfont.cn/search/index?searchType=icon&q=%E7%82%B9&page=1&fromCollection=-1
+

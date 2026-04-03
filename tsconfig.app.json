@@ -16,6 +16,12 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
+  /* 路径导入ts报错 */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
