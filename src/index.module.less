@@ -1,0 +1,28 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-tap-highlight-color: transparent;
+ }
+
+ body {
+   background-color: #f2f4f6;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   color: #1e2a3e;
+   line-height: 1.4;
+ }
+
+ /* 主容器：flex列布局，实现头部固定 + 中间滚动 */
+ .app {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   /* 占满视口高度 */
+  //  max-width: 500px;
+   /* 移动端舒适宽度，居中显示 */
+   margin: 0 auto;
+   background: #f2f4f6;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+   overflow: hidden;
+   /* 防止整体滚动，内部滚动区域单独控制 */
+ }

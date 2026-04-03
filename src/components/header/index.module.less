@@ -1,0 +1,77 @@
+.header {
+  background-color: #fff;
+  padding: 20px 16px 6px;
+
+  .statusBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px 20px 4px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .dots {
+      display: flex;
+      gap: 2px;
+    }
+
+    .dot {
+      width: 4px;
+      height: 4px;
+      background: #333;
+      border-radius: 50%;
+    }
+  }
+
+  .content {
+    // display: flex;
+    // align-items: center;
+    // gap: 4px;
+
+    .changeBtnWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // text-align: right;
+      margin-bottom: 16px;
+
+      .changeBtn {
+        border: none;
+        padding: 6px 14px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        // color: #5a6874;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &:active {
+          background: #e4e6e9;
+        }
+      }
+    }
+
+    .transferCount {
+      font-size: 20px;
+      font-weight: 600;
+
+      .count {
+        color: red;
+      }
+    }
+
+    .quotaNotice {
+      padding: 12px 0;
+      font-size: 12px;
+      color: #8e9aaf;
+    }
+  }
+
+}
